@@ -5,38 +5,38 @@
   </p>
 </div>
 
-GitHub action to install and run [rokit](https://github.com/rojo-rbx/rokit); a toolchain manager.
+GitHub action to install and run [rokit](https://github.com/rojo-rbx/rokit); a toolchain manager for Roblox.
 
 ## Usage
 
-Use the latest released version of `rokit` with default parameters:
+With this use you automatically use the latest release of `rokit` with the default parameters:
 
 ```yaml
 steps:
-  - uses: CompeyDev/setup-rokit@v0.2.1
+  - uses: unknown420x/setup-rokit@1.0.0
 ```
 
-For a list of default parameter values, [check here](https://github.com/CompeyDev/setup-rokit/blob/main/action.yml#L5-L20).
+The parameters values are these in this file, [check here](https://github.com/unknown420x/setup-rokit/blob/master/action.yml#L5-L20).
 
 ### Advanced
 
-For more advanced cases, use the parameters below.
+If you want to make custom settings for your project, you can use parameters like this.
 
 ```yaml
 steps:
-  - uses: CompeyDev/setup-rokit@v0.2.1
+  - uses: unknown420x/setup-rokit@1.0.0
     with:
-      version: v1 # name of git tag in rokit (uses latest tag by default)
-      path: some_dir/my_project # path to project dir containing a `rokit.toml`, `aftman.toml`, or `foreman.toml` ("." (current dir) by default)
-      cache: false # whether to enable binary caching between runs (false by default)
-      token: ${{ github.token }} # GitHub token to bypass rate limit (${{ github.token }} set by default)
+      version: v1.2.0 # This is the latest version of rokit, recommended (uses the latest tag by default)
+      path: some_dir/my_project # path to the directory that contains the `rokit.toml`, `aftman.toml`, or `foreman.toml` ("." (current dir) by default)
+      cache: false # whether to enable binary caching between runs (false by default and recommended if you dont have a github token)
+      token: ${{ github.token }} # GitHub token to bypass the github rate limit (${{ github.token }} set by default)
 ```
 
 ## Inputs
 
 ### `version`
 
-The git tag of `rokit` to install from releases and use. By default this input will be assigned to the latest version of `rokit`.
+The git release version of `rokit` to install and use. By default this input will be assigned to the latest version of `rokit`.
 
 ### `path`
 
@@ -56,8 +56,9 @@ In any case, it is recommended to benchmark before enabling this feature.
 
 ### `token`
 
-Set to a GitHub token to be used by `rokit` to increase the GitHub rate-limit. Note, these two options, `${{ github.token }}` and `${{ secrets.GITHUB_TOKEN }}`, are equivalent and passed by default. **Thus, you do not need to specify this parameter unless you are using a token different from the owner of the repository.**
+Set a GitHub token to be used by `rokit` to avoid the GitHub rate-limit. Note, these two options, `${{ github.token }}` and `${{ secrets.GITHUB_TOKEN }}`, are equivalent and passed by default.
 
 ## Credits
 
-[@ok-nick](https://github.com/ok-nick) - Creating `setup-aftman` which `setup-rokit` is a fork of
+[@CompeyDev](https://github.com/CompeyDev) - Creating `setup-rokit`, which i forked.
+[@rojo-rbx](https://github.com/rojo-rbx) - The group that created `rokit`, the toolchain.
