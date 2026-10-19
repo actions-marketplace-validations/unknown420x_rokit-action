@@ -16,7 +16,7 @@ steps:
   - uses: unknown420x/setup-rokit@1.0.0
 ```
 
-The parameters values are these in this file, [check here](https://github.com/unknown420x/setup-rokit/blob/master/action.yml#L5-L20).
+The parameters values are these in this file, [check here](https://github.com/unknown420x/setup-rokit/blob/main/action.yml#L5-L20).
 
 ### Advanced
 
