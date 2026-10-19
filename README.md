@@ -60,5 +60,5 @@ Set a GitHub token to be used by `rokit` to avoid the GitHub rate-limit. Note, t
 
 ## Credits
 
-[@CompeyDev](https://github.com/CompeyDev) - Creating `setup-rokit`, which i forked.
-[@rojo-rbx](https://github.com/rojo-rbx) - The group that created `rokit`, the toolchain.
+- [@CompeyDev](https://github.com/CompeyDev) - Creating `setup-rokit`, which i forked.
+- [@rojo-rbx](https://github.com/rojo-rbx) - The group that created `rokit`, the toolchain.
