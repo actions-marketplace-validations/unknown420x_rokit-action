@@ -1,11 +1,15 @@
 <div align="center">
-  <h1><code>setup-rokit</code></h1>
+  <h1><code>Rokit Action</code></h1>
   <p>
-    <a href="https://github.com/CompeyDev/setup-rokit/actions?query=workflow%3Atest"><img src="https://github.com/CompeyDev/setup-rokit/workflows/test/badge.svg" alt="CI" /></a>
+    <a href="https://github.com/unknown420x/rokit-action/actions?query=workflow%3Atest"><img src="https://github.com/unknown420x/rokit-action/workflows/test/badge.svg" alt="CI" /></a>
   </p>
 </div>
 
 GitHub action to install and run [rokit](https://github.com/rojo-rbx/rokit); a toolchain manager for Roblox.
+
+## Updates
+
+This repository with the action will be rarely updated, because is currently working fine and will probably updating if a good pull request got viewed or a issue got viewed, or if i try to make it better, more optimized or change something.
 
 ## Usage
 
@@ -13,10 +17,10 @@ With this use you automatically use the latest release of `rokit` with the defau
 
 ```yaml
 steps:
-  - uses: unknown420x/setup-rokit@1.0.0
+  - uses: unknown420x/rokit-action@1.0.0
 ```
 
-The parameters values are these in this file, [check here](https://github.com/unknown420x/setup-rokit/blob/main/action.yml#L5-L20).
+The parameters values are these in this file, [check here](https://github.com/unknown420x/rokit-action/blob/main/action.yml#L5-L20).
 
 ### Advanced
 
@@ -24,7 +28,7 @@ If you want to make custom settings for your project, you can use parameters lik
 
 ```yaml
 steps:
-  - uses: unknown420x/setup-rokit@1.0.0
+  - uses: unknown420x/rokit-action@1.0.0
     with:
       version: v1.2.0 # This is the latest version of rokit, recommended (uses the latest tag by default)
       path: some_dir/my_project # path to the directory that contains the `rokit.toml`, `aftman.toml`, or `foreman.toml` ("." (current dir) by default)
@@ -44,7 +48,7 @@ The path to the directory containing the `rokit.toml` to install tools from. The
 
 ### `cache`
 
-Enable to cache tools installed by `rokit`, the default value of this input is `false`. Note, in many cases enabling this feature will slow down the `setup-rokit` action.
+Enable to cache tools installed by `rokit`, the default value of this input is `false`. Note, in many cases enabling this feature will slow down `rokit-action`.
 
 There are a few reasons you may choose to enable caching:
 

@@ -1,4 +1,4 @@
-name: setup-rokit
+name: rokit-action
 description: GitHub action to install and run rokit; a toolchain manager for install roblox coding tools and others.
 author: unknown420x
 
