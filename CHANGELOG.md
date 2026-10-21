@@ -18,7 +18,7 @@ If you dont view some things this action have and aren't in the changelogs, is b
 
 - Optimized some parts of the install.sh, idk why but i want to be faster and better :D
 
-## Versions from
+## Versions from the repository i forked from [@CompeyDev](https://github.com/CompeyDev)
 
 [0.1.0]: https://github.com/CompeyDev/setup-rokit/releases/tag/v0.1.0
 [0.1.1]: https://github.com/CompeyDev/setup-rokit/releases/tag/v0.1.1
