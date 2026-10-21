@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 If you dont view some things this action have and aren't in the changelogs, is because i
 
-## [1.0.0] - 2026-10-19
+## [1.0.0] - 2026-10-20
 
 ### Added
 
